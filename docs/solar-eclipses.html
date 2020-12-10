@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solar Eclipses | My Moon Site</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar code adapted from here: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between bg-darker">
+            <a class="navbar-brand" href="index.html">My Moon Site</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse moon-site-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item text-right mr-2">
+                        <a class="nav-link" href="index.html">Moon Phases</a>
+                    </li>
+                    <li class="nav-item text-right mr-2 active">
+                        <a class="nav-link" href="#">Solar Eclipses <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item text-right mr-2">
+                        <a class="nav-link" href="moon-facts.html">Moon Facts</a>
+                    </li>
+                    <li class="nav-item text-right mr-2">
+                        <a class="nav-link" href="about-me.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Solar Eclipses</h1>
+        </section>
+
+        <section class="container">
+            <div>
+                <div>
+                    <img class="image-full" src="/src/img/solar_eclipse_1110.jpg" alt="">
+                </div>
+                <div class="image-credit">Image from Unsplash, credit <a target="_blank"
+                        href="https://unsplash.com/photos/7YiZKj9A3DM">Mathew Schwartz</a></div>
+            </div>
+            <h2>What are Solar Eclipses?</h2>
+            <p>Solar eclipses are caused by the Moon passing directly between the Sun and Earth. Due
+                to
+                the extreme size distance between the Sun and Moon, two shadows will be created: the
+                <strong>penumbra</strong>, a large, lighter shadow, and the <strong>umbra</strong>,
+                which is a smaller, darker shadow in the center of the penumbra.</p>
+            <p class="alert alert-danger">Warning: Never look at an eclipse without the proper
+                protection. Always use eclipse glasses or solar filters.</p>
+            <p>Note that the diagram below is not to scale. In reality, the distances are far
+                larger,
+                and the Sun is much larger than the Earth.</p>
+        </section>
+        <section class="container-fluid">
+            <div class="eclipse-diagram-wrapper">
+                <div class="eclipse-diagram-sunlight absolute-center-y"></div>
+                <div class="eclipse-diagram-penumbra absolute-center-y"></div>
+                <div class="eclipse-diagram-umbra absolute-center-y"></div>
+                <div class="eclipse-diagram-sun absolute-center-y"></div>
+                <div class="eclipse-diagram-moon absolute-center-y"></div>
+                <div class="eclipse-diagram-earth absolute-center-y"></div>
+                <div class="eclipse-diagram-penumbra-label"></div>
+                <div class="eclipse-diagram-umbra-label"></div>
+            </div>
+        </section>
+        <section class="container">
+            <p>People who are in the umbra will be treated to a dramatic eclipse where the Sun is
+                almost
+                completely blocked by the Moon. However, the Sun's <strong>corona</strong> will be
+                visible as a luminous aura around the moon (you can see the corona in the image at
+                the top of this page).</p>
+            <p>People within the penumbra will see the Sun partially blocked by the Moon.</p>
+        </section>
+    </main>
+    <footer class="container">
+        <div class="footer-wrapper">
+            <p>Coded and written by Stephen Lee for CS50</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me | My Moon Site</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar code adapted from here: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between bg-darker">
+            <a class="navbar-brand" href="index.html">My Moon Site</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse moon-site-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item text-right mr-2">
+                        <a class="nav-link" href="index.html">Moon Phases</a>
+                    </li>
+                    <li class="nav-item text-right mr-2">
+                        <a class="nav-link" href="solar-eclipses.html">Solar Eclipses</a>
+                    </li>
+                    <li class="nav-item text-right mr-2">
+                        <a class="nav-link" href="moon-facts.html">Moon Facts </a>
+                    </li>
+                    <li class="nav-item text-right mr-2 active">
+                        <a class="nav-link" href="#">About Me</a> <span
+                            class="sr-only">(current)</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h1>About Me</h1>
+            <div class="row">
+                <div class="col-md-7">
+                    <p>I've been interested in astronomy since I was a child. My first telescope was
+                        a hand-me-down Tasco reflector from the '80s that barely worked. I have
+                        since upgraded to the large Dobsonian reflector seen in the photo.</p>
+                    <p>In recent years, I have joined my love of astronomy with my love of coding to
+                        create the astronomy website <a target="_blank"
+                            href="https://lookatthesky.com">Look&nbsp;at&nbsp;the&nbsp;Sky</a>,
+                        which has observing tips and interesting facts about space.</p>
+                    <p class="signature mb-5">- Stephen Lee</p>
+                </div>
+                <div class="col-md-5">
+                    <!-- code adapted from here: https://getbootstrap.com/docs/4.0/components/card/ -->
+                    <div class="card bg-dark mx-auto" style="width: 20rem;">
+                        <img src="src/img/stephen_with_telescope.jpg"
+                            class="card-img-top image-full" alt="Stephen with telescope">
+                        <div class="card-body">
+                            <h5 class="card-title">Stephen Lee</h5>
+                            <p class="card-text">Astronomy and coding enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <div class="footer-wrapper">
+            <p>Coded and written by Stephen Lee for CS50</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>

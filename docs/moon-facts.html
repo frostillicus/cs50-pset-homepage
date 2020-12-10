@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crazy Moon Facts | My Moon Site</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar code adapted from here: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between bg-darker">
+            <a class="navbar-brand" href="index.html">My Moon Site</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse moon-site-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item text-right mr-2">
+                        <a class="nav-link" href="index.html">Moon Phases</a>
+                    </li>
+                    <li class="nav-item text-right mr-2">
+                        <a class="nav-link" href="solar-eclipses.html">Solar Eclipses</a>
+                    </li>
+                    <li class="nav-item text-right mr-2 active">
+                        <a class="nav-link" href="moon-facts.html">Moon Facts <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item text-right mr-2">
+                        <a class="nav-link" href="about-me.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Crazy Facts About the Moon</h1>
+            <div class="mb-5">
+                <img class="image-full" src="/src/img/moon_closeup.jpg" alt="">
+                <div class="image-credit">Image from Unsplash, credit <a target="_blank"
+                        href="https://unsplash.com/photos/jlV2k_Fx0fc">NASA</a>. Rotated and
+                    cropped.</div>
+            </div>
+            <ul>
+                <li>There is a <a target="_blank"
+                        href="https://www.livescience.com/65684-mystery-moon-blob-is-massive.html">2.4
+                        quadrillion ton "anomaly"</a> made of metal, deep below the surface
+                    of the Moon. It's probably from an asteroid that collided with the Moon, but it
+                    could also be a huge, underground alien base!</li>
+                <li>Eugene Cernan <a target="_blank"
+                        href="https://www.space.com/20790-eugene-cernan-astronaut-biography.html">carved
+                        his daughter's initials</a> on the surface of the moon. Since
+                    there's basically no erosion on the Moon, the initials will still be there
+                    many
+                    years from now.</li>
+                <li>Monday is named after the Moon ("Moon's day"). It was originally the
+                    Anglo-Saxon
+                    word "<a target="_blank"
+                        href="https://www.cbc.ca/kidscbc2/the-feed/names-of-the-week-monday">mondandaeg</a>".
+                </li>
+                <li>Due to tidal locking, one side of the Moon always faces the Earth. However,
+                    since the orbit is not circular, the Moon gradually rocks back and forth
+                    (called
+                    "libration"), allowing us to see <a target="_blank"
+                        href="https://earthsky.org/astronomy-essentials/how-much-of-the-moon-can-we-see-from-earth-lunar-libration#libration">about
+                        59% of its surface</a> from the Earth.</li>
+                <li>The Moon was probably created when another planet <a target="_blank"
+                        href="https://www.psi.edu/epo/moon/moon.html">collided with the
+                        Earth</a>
+                    billions of years ago. Some of the material was blasted into orbit around
+                    the
+                    Earth, later accumulating into a single large body.</li>
+                <li>The Moon is also known as "Luna" and is the <a target="_blank"
+                        href="https://www.discovermagazine.com/mind/why-do-we-still-believe-in-lunacy-during-a-full-moon">origin
+                        of words like "lunacy"</a>. This is based on the myth that the Moon
+                    (particularly the full Moon) affects people's behavior.</li>
+                <li>The Moon is about as wide as Australia.</li>
+                <li>Illustrations often portray the Moon as being very close to Earth, but in
+                    reality it's very far away. The actual scale is shown below. Image credit:
+                    <a target="_blank"
+                        href="https://commons.wikimedia.org/wiki/File:Earth-Moon.png">Nickshanks</a>
+                    (CC BY 2.5).
+                    <div class="my-5">
+                        <img class="image-full my-4" src="src/img/earth_moon_distance.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="container">
+        <div class="footer-wrapper">
+            <p>Coded and written by Stephen Lee for CS50</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>

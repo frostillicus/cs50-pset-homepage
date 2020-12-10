@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phases of the Moon | My Moon Site</title>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header>
+            <!-- navbar code adapted from here: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+            <nav class="navbar navbar-expand-lg navbar-dark justify-content-between bg-darker">
+                <a class="navbar-brand" href="index.html">My Moon Site</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse moon-site-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item text-right mr-2 active">
+                            <a class="nav-link" href="#">Moon Phases</a>
+                        </li>
+                        <li class="nav-item text-right mr-2">
+                            <a class="nav-link" href="solar-eclipses.html">Solar Eclipses <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item text-right mr-2">
+                            <a class="nav-link" href="moon-facts.html">Moon Facts</a>
+                        </li>
+                        <li class="nav-item text-right mr-2">
+                            <a class="nav-link" href="about-me.html">About Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="container">
+                <h1>Phases of the Moon</h1>
+                <p>Drag the slider to change the speed!</p>
+            </section>
+            <section class="container">
+                <div class="phases-wrapper">
+                    <div class="phases-images">
+                        <img src="./src/img/phases/phase_01.png" alt="phase1">
+                        <img src="./src/img/phases/phase_02.png" alt="phase2">
+                        <img src="./src/img/phases/phase_03.png" alt="phase3">
+                        <img src="./src/img/phases/phase_04.png" alt="phase4">
+                        <img src="./src/img/phases/phase_05.png" alt="phase5">
+                        <img src="./src/img/phases/phase_06.png" alt="phase6">
+                        <img src="./src/img/phases/phase_07.png" alt="phase7">
+                        <img src="./src/img/phases/phase_08.png" alt="phase8">
+                        <img src="./src/img/phases/phase_09.png" alt="phase9">
+                        <img src="./src/img/phases/phase_10.png" alt="phase10">
+                        <img src="./src/img/phases/phase_11.png" alt="phase11">
+                        <img src="./src/img/phases/phase_12.png" alt="phase12">
+                        <img src="./src/img/phases/phase_13.png" alt="phase13">
+                        <img src="./src/img/phases/phase_14.png" alt="phase14">
+                        <img src="./src/img/phases/phase_15.png" alt="phase15">
+                        <img src="./src/img/phases/phase_16.png" alt="phase16">
+                        <img src="./src/img/phases/phase_17.png" alt="phase17">
+                        <img src="./src/img/phases/phase_18.png" alt="phase18">
+                        <img src="./src/img/phases/phase_19.png" alt="phase19">
+                        <img src="./src/img/phases/phase_20.png" alt="phase20">
+                        <img src="./src/img/phases/phase_21.png" alt="phase21">
+                        <img src="./src/img/phases/phase_22.png" alt="phase22">
+                        <img src="./src/img/phases/phase_23.png" alt="phase23">
+                        <img src="./src/img/phases/phase_24.png" alt="phase24">
+                        <img src="./src/img/phases/phase_25.png" alt="phase25">
+                    </div>
+                    <div class="phases-slider-wrapper">
+                        <input class="m-0 p-0" type="range" name="phases-slider" id="phases-slider"
+                            min="6" max="100" valuse="25">
+                    </div>
+                    <div class="image-credit">
+                        <p>Image credit: <a target="_blank"
+                                href="https://commons.wikimedia.org/wiki/File:Lunar_Phases.jpg">Hamed
+                                Rajabpour and Nariman Ghorbani</a> (CC BY-SA 4.0). Image sliced and
+                            animated
+                            by Stephen Lee</p>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <h2>What are Phases?</h2>
+                <p>As the Moon revolves around the Earth, it appears to change shape. This is
+                    because
+                    the
+                    sunlit side sometimes faces directly toward the Earth (creating a <strong>full
+                        moon</strong>) and
+                    sometimes faces in other directions, creating <strong>crescent, quarter, and
+                        gibbous
+                        moons</strong>.</p>
+                <p>When the Moon is between the Earth and the Sun, the sunlit side faces directly
+                    away
+                    from
+                    the Earth. This is known as a <strong>new moon</strong>.</p>
+                <p>Contrary to popular belief, there is no dark side of the Moon. With the exception
+                    of
+                    lunar eclipses, one half of the moon is always lit by the sun. Sorry, Pink
+                    Floyd!
+                </p>
+                <h2>List of Phases</h2>
+                <ul>
+                    <li><strong>New moon</strong>: Unlit</li>
+                    <li><strong>Waxing crescent</strong>: Partly lit</li>
+                    <li><strong>First quarter</strong>: Half lit</li>
+                    <li><strong>Waxing gibbous</strong>: Mostly lit</li>
+                    <li><strong>Full moon</strong>: Fully lit</li>
+                    <li><strong>Waning gibbous</strong>: Mostly lit</li>
+                    <li><strong>Last quarter</strong>: Half lit</li>
+                    <li><strong>Waning crescent</strong>: Partly lit</li>
+                </ul>
+                <p>List of phases taken from Wikipedia's <a
+                        href="https://en.wikipedia.org/wiki/Lunar_phase#Phases_of_the_Moon">Lunar
+                        phase</a>
+                    article.</p>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="footer-wrapper">
+                <p>Coded and written by Stephen Lee for CS50</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>

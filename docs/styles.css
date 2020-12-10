@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Bungee+Outline&family=Dawning+of+a+New+Day&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #eee;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+h1,
+h2 {
+    font-weight: 900;
+    margin-top: 1.3em;
+}
+
+li:not(:last-child) {
+    margin-bottom: 0.6rem;
+}
+
+main {
+    min-height: calc(100vh - 155px);
+}
+
+main a {
+    color: #0de;
+    border-bottom: 1px solid #0de;
+    transition: border-bottom 0.1s ease-out;
+}
+
+main a:hover {
+    color: #0cd;
+    text-decoration: none;
+    border-bottom: 6px solid #0de;
+}
+
+main a:visited {
+    color: #0de;
+}
+
+strong {
+    font-weight: 500;
+    color: #fb0;
+}
+
+.navbar-brand {
+    position: relative;
+    top: -0.25rem;
+    font-family: "Bungee Outline", sans-serif;
+    font-size: 1.6rem;
+    color: #fb0 !important;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 960px !important;
+    }
+}
+
+.moon-site-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease 0s, opacity 0.5s ease 0s;
+    display: block !important;
+    // opacity: 0;
+}
+
+@media (min-width: 992px) {
+    .moon-site-menu {
+        max-height: 100vh;
+        opacity: 1;
+        transition: opacity 0s ease 0s;
+    }
+}
+
+.moon-site-menu.show {
+    height: auto;
+    max-height: 100vh;
+    opacity: 1;
+}
+
+.image-full {
+    width: 100%;
+}
+
+.image-credit {
+    max-width: 500px;
+    margin: 0.5rem auto 0;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.015em;
+}
+
+.absolute-center-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.phases-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.phases-images img {
+    display: none;
+}
+
+.phases-images .phases-image-selected {
+    display: block;
+}
+
+.phases-slider-wrapper {
+    margin: 0 0 1rem;
+    padding: 6px 16px 0;
+    background: #333;
+    border-radius: 20px;
+}
+
+.eclipse-diagram-wrapper {
+    position: relative;
+    margin: 2rem 0;
+    height: 20vw;
+}
+
+.eclipse-diagram-sunlight {
+    left: 17.5vw;
+    height: 18vw;
+    width: 56vw;
+    background: linear-gradient(to bottom, #fc2, #eb7);
+    opacity: 0.4;
+    -webkit-clip-path: polygon(0 0, 100% 41.7%, 100% 58.3%, 0 100%, 0 0);
+    clip-path: polygon(0 0, 100% 41.7%, 100% 58.3%, 0 100%, 0 0);
+}
+
+.eclipse-diagram-penumbra {
+    left: 73.5vw;
+    height: 5vw;
+    width: 11vw;
+    background: linear-gradient(to bottom, #999, #777);
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%, 0 20%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%, 0 20%);
+}
+
+.eclipse-diagram-umbra {
+    left: 73.5vw;
+    height: 3vw;
+    width: 11vw;
+    background: linear-gradient(to bottom, #444, #222);
+    -webkit-clip-path: polygon(0 0, 100% 40%, 100% 60%, 0 100%, 0 0);
+    clip-path: polygon(0 0, 100% 40%, 100% 60%, 0 100%, 0 0);
+}
+
+.eclipse-diagram-penumbra-label,
+.eclipse-diagram-umbra-label {
+    position: absolute;
+    width: 1px;
+    background: #eee;
+}
+
+.eclipse-diagram-penumbra-label {
+    left: 81vw;
+    top: 5.5vw;
+    height: 3vw;
+}
+
+.eclipse-diagram-umbra-label {
+    left: 79vw;
+    bottom: 5.5vw;
+    height: 4.4vw;
+}
+
+.eclipse-diagram-penumbra-label:before,
+.eclipse-diagram-umbra-label:before {
+    position: absolute;
+    text-align: center;
+    color: #fb0;
+    font-size: 0.8em;
+    width: auto;
+}
+
+.eclipse-diagram-penumbra-label:before {
+    content: "Penumbra";
+    bottom: 3vw;
+    right: 0;
+    width: 10vw;
+}
+
+@media (min-width: 600px) {
+    .eclipse-diagram-penumbra-label:before {
+        right: -5vw;
+    }
+}
+
+.eclipse-diagram-umbra-label:before {
+    content: "Umbra";
+    top: 4.5vw;
+    right: -5vw;
+    width: 10vw;
+}
+
+.eclipse-diagram-sun {
+    left: 8vw;
+    height: 18vw;
+    width: 18vw;
+    background: linear-gradient(to bottom right, #fb0, #f60);
+    border-radius: 50%;
+}
+
+.eclipse-diagram-moon {
+    left: 72vw;
+    height: 3vw;
+    width: 3vw;
+    background: linear-gradient(to bottom right, #aaa, #777);
+    border-radius: 50%;
+}
+
+.eclipse-diagram-earth {
+    left: 83vw;
+    height: 7vw;
+    width: 7vw;
+    background: linear-gradient(to bottom right, #4a8, #118);
+    border-radius: 50%;
+}
+
+.signature {
+    font-family: "Dawning of a New Day", cursive;
+    font-size: 2.1rem;
+}
+
+.footer-wrapper {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #666;
+    font-size: 0.8rem;
+    color: #999;
+    letter-spacing: 0.015em;
+}
+
+.footer-wrapper p {
+    margin: 0;
+}
